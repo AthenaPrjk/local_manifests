@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="Athena"
+           fetch="https://github.com/AthenaPrjk"
+           revision="13.0"/>
+
+  <remote  name="mt6768-dev"
+           fetch="https://github.com/mt6768-dev"
+           revision="lineage-20"/>
+
+  <!-- Device -->
+  <project path="device/xiaomi/merlinx" name="device_xiaomi_merlinx" remote="Athena"/>
+  <project path="device/xiaomi/mt6768-common" name="device_xiaomi_mt6768-common" remote="Athena"/>
+
+  <!-- Vendor -->
+  <project path="vendor/xiaomi/merlinx" name="vendor_xiaomi_merlinx" remote="Athena"/>
+  <project path="vendor/xiaomi/mt6768-common" name="vendor_xiaomi_mt6768-common" remote="Athena"/>
+
+  <!-- Kernel -->
+  <project path="kernel/xiaomi/mt6768" name="kernel_xiaomi_mt6768" remote="Athena"/>
+
+  <!-- Sepolicy -->
+  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="mt6768-dev" />
+
+  <!-- Hardware -->
+  <project path="hardware/mediatek" name="android_hardware_mediatek" remote="mt6768-dev"/>
+
+  <!-- Packages -->
+  <project path="packages/apps/MtkFMRadio" name="android_packages_apps_MtkFMRadio" remote="mt6768-dev"/>
+
+</manifest>
